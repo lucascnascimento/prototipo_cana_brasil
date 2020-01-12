@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Cana Brasil</title>
+    <!--Custom Styles-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--Custom Js-->
+    <script src="js/script.js" async></script>
+    <script src="https://kit.fontawesome.com/cf7aefb51d.js" crossorigin="anonymous" async></script>
+</head>
+
+<body onclick="bodyCloseNav()">
+    <!-- Header para telas médias e pequenas -->
+    <div class="header-sm" id="headersm">
+        <header class="header-nav-flex">
+            <!-- Botão que abre a barra lateral -->
+            <div class="open-side-nav">
+                <a onclick="openNav()">
+                    <i class="fas fa-bars fa-lg barra-icone"></i>
+                </a>
+            </div>
+            <!-- Barra lateral -->
+            <div class="side-nav" id="mySideNav">
+                <a class="closebtn" onclick="closeNav()">&times;</a>
+                <hr class="side-nav-line">
+                <a href="javascript:void()" class="dropdown-btn opcao">Cursos</a>
+                <div class="dropdown-container">
+                    <a href="#">Mestre Alambiqueiro</a>
+                    <a href="#">Padronização e Blend</a>
+                    <a href="#">Sommelier de Cachaça</a>
+                    <a href="#">Rapadura, melado e cana</a>
+                </div>
+                <hr class="side-nav-line">
+                <a href="javascript:void()" class="dropdown-btn">Consultoria</a>
+                <div class="dropdown-container">
+                    <a href="#">Projetos</a>
+                    <a href="#">Responsabilidade Técnica</a>
+                    <a href="#">Produção de cachaça</a>
+                    <a href="#">Marketing</a>
+                </div>
+                <hr class="side-nav-line">
+                <a href="#">Loja</a>
+                <hr class="side-nav-line">
+                <a href="#">Blog</a>
+                <hr class="side-nav-line">
+                <a href="#">Quem somos</a>
+                <hr class="side-nav-line">
+                <a href="#">Como Chegar</a>
+                <hr class="side-nav-line">
+                <a href="#">Contato</a>
+            </div>
+            <!-- Logo -->
+            <div class="header-title">
+                <p>
+                    <a href="#">
+                        CANA BRASIL
+                    </a>
+                </p>
+            </div>
+            <!-- Ícone carrinho de compras -->
+            <div class="shopping-icon">
+                <a href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </header>
+        <hr>
+    </div>
+
+
+    <!-- Imagem de capa -->
+    <div class="hero-img">
+        <!-- Header para telas grandes -->
+        <div class="hero-img__header-lg">
+            <div class="hero-img__logo">
+                <a>
+                    <img class="hero-img__img" src="./imgs/CanaBrasilLogo.png" />
+                </a>
+            </div>
+            <div class="hero-img__navbar">
+                <ul>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Consultoria</a></li>
+                    <li><a href="#">Loja</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Como Chegar</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero-img__text">
+            <p>A Cana Brasil é uma das fazendas-escola mais tradicionais de Minas Gerais e do Brasil.
+                Conheça nossos cursos e consultorias e aprenda como alavancar o seu negócio.
+            </p>
+        </div>
+
+        <div class="hero-img__btn">
+            <button onclick="window.location.href = '#tituloCursos';">Saber Mais
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Grid de cursos -->
+    <div class="titulo-sessao" id="tituloCursos">
+        <p>
+            Cursos
+        </p>
+    </div>
+    <div class="cursos-container">
+        <div class="produto-card">
+            <div class="card-image">
+
+            </div>
+            <div class="produto-text">
+                <h2>Mestre Alambiqueiro</h2>
+                <p>Aprenda na teoria e na prática todas as etapas da produção artesanal de cachaça, enfatizando a
+                    fermentação e a produção da bebida.</p>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+        <div class="produto-card">
+            <div class="card-image">
+
+            </div>
+            <div class="produto-text">
+                <h2>Padronização e blend</h2>
+                <p>Aprenda a melhorar as características sensoriais do produto final através da mistura de diferentes
+                    tipos de cachaça.</p>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+        <div class="produto-card">
+            <div class="card-image">
+
+            </div>
+            <div class="produto-text">
+                <h2>Sommelier de cachaça</h2>
+                <p>Aprenda sobre análise sensorial, degustação e harmonização de cachaças e abra o seu caminho para se
+                    tornar um especialista.</p>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+        <div class="produto-card">
+            <div class="card-image">
+
+            </div>
+            <div class="produto-text">
+                <h2>Rapadura, melado e cana</h2>
+                <p>Aprenda sobre o processo de produção dos diferentes subprodutos da cana-de-açúcar.</p>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consultorias -->
+    <div class="consult-bg consult-container">
+        <div class="consult-container__titulo">
+            <h1>
+                Consultoria técnica e comercial
+            </h1>
+        </div>
+        <div class="consult-container__texto">
+            <p>
+                Oferecemos serviços de Consultoria, Estudo de Viabilidade Econômica e Responsabilidade Técnica, bem como
+                todos os Equipamentos Industriais essenciais à produção de Cachaça de Alta Qualidade, Rapadura, Melado,
+                Açúcar Mascavo e Álcool Combustível.
+            </p>
+        </div>
+        <button class="consult-container__btn">Saiba Mais</button>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-sm">
+            <!-- Opções -->
+
+            <!-- Sobre nós -->
+            <button class="footer__item">Sobre nós
+                <span>
+                    <i class="fas fa-plus fa-xs fa-fw"></i>
+                </span>
+            </button>
+            <div class="footer_collapsible">
+                <a href="#">Quem Somos</a>
+                <a href="#">Blog</a>
+            </div>
+            <hr>
+
+            <!-- Produtos e serviços -->
+            <button class="footer__item">Produtos e serviços
+                <span>
+                    <i class="fas fa-plus fa-xs fa-fw"></i>
+                </span>
+            </button>
+            <div class="footer_collapsible">
+                <a href="#">Cursos</a>
+                <a href="#">Consultoria</a>
+                <a href="#">Loja</a>
+            </div>
+            <hr>
+
+            <!-- Contato -->
+            <button class="footer__item">Contato
+                <span>
+                    <i class="fas fa-plus fa-xs fa-fw"></i>
+                </span>
+            </button>
+            <div class="footer_collapsible">
+                <p><i class="fas fa-phone"></i> (31) 2535-2228</p>
+                <p><i class="fas fa-phone"></i> (31) 9-9876-5036</p>
+                <p><i class="fas fa-phone"></i> (31) 9-9877-3636</p>
+                <p><i class="fas fa-home"></i> Rua Vancouver, n° 356 - Jardim Canadá - Nova Lima</p>
+                <p><i class="fas fa-envelope"></i> emailAqui@gmail.com</p>
+            </div>
+            <hr>
+        </div>
+
+        <div class="footer-lg">
+            <div class="footer-lg__container">
+                <h2>Mapa do Site</h2>
+                <a>Quem Somos</a>
+                <a>Loja</a>
+                <a>Blog</a>
+            </div>
+            <div class="footer-lg__container">
+                <p>Cursos</p>
+                <a>Mestre Alambiqueiro</a>
+                <a>Padronização e Blend</a>
+                <a>Sommelier de Cachaça</a>
+                <a>Rapadura, Melado e Açúcar</a>
+            </div>
+            <div class="footer-lg__container">
+                <p>Consultoria</p>
+                <a>Projetos</a>
+                <a>Responsabilidade Técnica</a>
+                <a>Produção de Cachaça</a>
+                <a>Marketing</a>
+                <a>Boas Práticas de Fabricação</a>
+            </div>
+            <div class="footer-lg__container">
+                <h2>Contato</h2>
+                <a><i class="fas fa-home"></i> Rua Vancouver, n° 356 - Jardim Canadá, Nova Lima - MG, 34007-722</a>
+                <a><i class="fas fa-home"></i> Fazenda Escola Taverna Real, BR-482, KM 270, Itaverava - MG, 36440-000</a>
+                <a><i class="fas fa-phone"></i> (31) 2535-2228</a>
+                <a><i class="fas fa-phone"></i> (31) 9-9876-5036</a>
+                <a><i class="fas fa-phone"></i> (31) 9-9877-3636</a>
+                <a><i class="fas fa-envelope"></i> canabrasilvendas@hotmail.com</a>
+            </div>
+        </div>
+        
+        <hr class="footer__hr">
+
+        <!-- Redes sociais -->
+        <div class="footer__social-sm">
+            <div>
+                <a href="#">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <i class="fab fa-youtube fa-2x"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer__info">
+            <p>© 2019 Cana Brasil – Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

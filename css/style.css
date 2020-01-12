@@ -1,0 +1,528 @@
+body,html {
+    height: 100%;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+.header-sm{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    left: 0px;
+}
+
+.header-sm hr:first-of-type{
+    margin: 0rem auto 0rem auto;
+    color: black;
+    border-style: solid;
+}
+
+.header-nav-flex{
+    display: flex;
+    align-items: center;
+    height: 3.125rem;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Botão que abre a barra de navegação lateral */
+.open-side-nav > a{
+    color: black;
+    cursor: pointer;
+}
+
+/* Título do cabeçalho */
+.header-title{
+    font-family: "Oswald", sans-serif;
+}
+
+.header-title > p > a{
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/* Botão do carrinho de compras */
+.shopping-icon > a{
+    color: black;
+}
+
+/* Barra lateral */
+.side-nav{
+    height: 100%;
+    width: 0; /* Setado no Js*/
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3.75rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.side-nav > a{
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+    text-transform: uppercase;
+    /* border-bottom: 1px solid #111; */
+}
+
+.side-nav > .closebtn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1.5625rem;
+    font-size: 2rem;
+    margin-left: 3.125rem;
+    cursor: pointer;
+}
+
+.side-nav a:hover {
+    color:white;
+    background: rgba(128, 128, 128, 0.5);
+    /* TODO fazer as cores mudarem quando o mouse passar por cima */
+}
+
+.side-nav-line{
+    margin: 0rem auto 0rem auto;
+    width: 90%;
+    border: 1px solid gray;
+    opacity: 0.5;
+}
+
+.side-nav hr:nth-child(2){
+    width: 100%;
+}
+
+.side-nav .active {
+    background-color: #076B46;
+    color: white;
+    /* TODO fazer as cores mudarem quando clicado */
+}
+
+/* Opções da aba cursos na nav lateral */
+.dropdown-container {
+    display: none;
+    white-space: nowrap;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+}
+
+.dropdown-container > a {
+    color:black;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-container > a:hover {
+    color:rgba(92, 91, 91, 0.5);
+    background-color: white;
+}
+
+.hero-img__header-lg{
+    display: none;
+}
+
+/* Imagem de fundo */
+.hero-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/cobre.jpeg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 50px;
+}
+
+.hero-img__text {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.125rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-img__btn{
+    display: none;
+}
+
+/* Título de sessão */
+.titulo-sessao {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #076B46;
+    color: white;
+    text-transform: uppercase;
+}
+
+.titulo-sessao p{
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+/* Grid de cursos */
+.cursos-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+    max-width: 740px;
+    justify-content: center;
+    margin: 0 auto 5px auto;
+}
+
+.produto-card{
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    background: rgba(250, 250, 250, 0.6);
+}
+
+.card-image{
+    display: none;
+}
+
+.produto-text {
+    display: flex;
+    flex-flow: column;
+}
+.produto-text h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.produto-text p{
+    text-align: justify;
+    padding: 0 0.5rem 0 0.5rem;
+    height: 72px;
+}
+
+.produto-text button{
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    background-color: #076B46;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    width: max-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+.produto-text button:hover{
+    background-color: #45b64b;
+}
+
+/* Consultorias */
+.consult-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/barris.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: auto;
+}
+
+.consult-container{
+    display: flex;
+    flex-flow: column;
+    font-family: "Oswald", sans-serif;
+    justify-items: center;
+}
+
+.consult-container__titulo h1{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.consult-container__texto{
+    display: none;
+}
+
+.consult-container__btn{
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    font-size: 1rem;
+    border-style: solid;
+    border-color: white;
+    border-radius: 3px;
+    padding: 5px;
+    width: max-content;
+    align-self: center;
+    margin-bottom: 21px;
+    cursor: pointer;
+}
+
+.consult-container__btn:hover{
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+/* Definiçoes do rodapé sm */
+.footer{
+    background-color: #076B46;
+    font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+.footer__hr{
+    display: none;
+}
+
+.footer-sm{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 10px;
+}
+
+.footer-lg{
+    display: none;
+}
+
+.footer__item{
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: 1.25rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    background-color: #076B46;
+}
+
+.footer__item span{
+    color: white;
+    float: right;
+}
+
+.footer_collapsible {
+    display: none;
+}
+
+.footer_collapsible > *{
+    display: block;
+    padding-left: 16px;
+    text-decoration: none;
+    margin: 0;
+    color: white;
+}
+
+.footer-sm hr{
+    color: #45b64b;
+    margin: 0rem auto 0rem auto;
+    border-style: solid;
+}
+
+.footer__social-sm{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.footer__social-sm div{
+    margin: 10px;
+}
+
+.footer__social-sm > div > a{
+    color: white;
+}
+
+.footer__info{
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.footer__info p{
+    margin-top: 0px;
+}
+
+/* Estilo para telas médias */
+
+/* Define a posição do botão dos cursos
+ para largura maior que 569px*/
+@media only screen and (min-width: 569px){
+    .produto-text button{
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+}
+
+/* Define a aparição do texto de consultoria */
+@media only screen and (min-width: 768px){
+    .consult-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .consult-container__titulo{
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .consult-container__texto{
+        display: block;
+        color: white;
+        text-align: center;
+        max-width: 600px;
+        margin-right: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .hero-img__text{
+        font-size: 3vw;
+    }
+}
+
+/*Estilos para Tela grande  */
+@media only screen and (min-width: 1201px){
+    /* header para telas grandes */
+    .header-sm{
+        display: none;
+    }
+
+    .hero-img{
+        margin-top: 0px;
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    .hero-img__header-lg{
+        display: block;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .hero-img__logo{
+        width: 100%;
+    }
+
+    .hero-img__img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        height: 150px;
+    }
+
+    .hero-img__navbar{
+        font-family: "Oswald", sans-serif;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-img__navbar ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .hero-img__navbar ul li{
+        font-size: 25px;
+    }
+
+    .hero-img__navbar ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .hero-img__navbar ul li a:hover{
+        color: rgba(71, 70, 70, 0.9);
+    }
+
+    .hero-img__text{
+        position: absolute;
+        font-size: 1.5rem;
+        top:60%;
+        background-color: rgba(0, 0, 0, 0.7);
+        max-width: 600px;
+    }
+
+    .hero-img__btn{
+        display: block;
+        position: absolute;
+        top:85%;
+        transform:translateX(-50%);
+        left:50%;
+    }
+
+    .hero-img__btn button{
+        font-family: "Oswald", sans-serif;
+        font-size: 1.5rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-transform: uppercase;
+        border-style: none;
+    }
+
+    .hero-img__btn button i{
+        display: block;
+    }
+
+    .hero-img__btn button:hover{
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+    }
+
+    /* Footer para telas grandes */
+    .footer-sm{
+        display: none;
+    }
+
+    .footer-lg{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer-lg__container:nth-child(2),
+    .footer-lg__container:nth-child(3) {
+        margin-top: 59px;
+    }
+
+    .footer-lg__container{
+        max-width: 340px;
+    }
+
+    .footer-lg__container *{
+        display: block;
+    }
+
+    .footer-lg__container p{
+        font-weight: bold;
+    }
+
+    .footer-lg__container *:not(p):not(h2){
+        cursor: pointer;
+    }
+
+    .footer__hr{
+        display: block;
+        color: #45b64b;
+        margin: 20px 1% 10px 1%;
+        border-style: solid;    
+    }
+
+}
