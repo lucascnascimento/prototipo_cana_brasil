@@ -5,6 +5,8 @@ This was my first CSS project. At that time I had a friend working at [Cana Bras
 
 Check it out at: https://lucascnascimento.github.io/prototipo_cana_brasil/
 
+and dont forget to check out the mobile version as well ;)
+
 ## Things I Learned
 
 * Flexbox and CSS Grid
